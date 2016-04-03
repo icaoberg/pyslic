@@ -26,17 +26,7 @@
 from try_imports import try_imports
 from sys import exit
 
-try:
-    import setuptools
-except:
-    message = '''setuptools not found.
-
-    On linux, the package is often called python-setuptools.
-    '''
-
-    print message
-
-    exit(1)
+import setuptools
 
 try_imports()
 
