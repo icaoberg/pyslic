@@ -2,7 +2,7 @@
 # Copyright (C) 2008-2009  Murphy Lab
 # vim: set ts=4 sts=4 sw=4 expandtab smartindent:
 # Carnegie Mellon University
-# 
+#
 # Written by Luis Pedro Coelho <lpc@cmu.edu>
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,12 +28,16 @@ from sys import exit
 try:
     import setuptools
 except:
-    print '''
+    message = '''
     setuptools not found.
 
     On linux, the package is often called python-setuptools.
     '''
+
+    print message
+
     exit(1)
+    
 try_imports()
 
 import numpy.distutils.core as numpyutils
@@ -69,5 +73,3 @@ numpyutils.setup(name='PySLIC',
       install_requires=install_requires,
       test_suite='nose.collector',
       )
-
-
