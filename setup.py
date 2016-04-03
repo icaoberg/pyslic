@@ -29,9 +29,10 @@ try:
     import setuptools
 except:
     print '''
-setuptools not found.
+    setuptools not found.
 
-On linux, the package is often called python-setuptools'''
+    On linux, the package is often called python-setuptools.
+    '''
     exit(1)
 try_imports()
 
