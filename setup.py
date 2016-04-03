@@ -25,11 +25,11 @@
 
 from try_imports import try_imports
 from sys import exit
+
 try:
     import setuptools
 except:
-    message = '''
-    setuptools not found.
+    message = '''setuptools not found.
 
     On linux, the package is often called python-setuptools.
     '''
@@ -37,7 +37,7 @@ except:
     print message
 
     exit(1)
-    
+
 try_imports()
 
 import numpy.distutils.core as numpyutils
